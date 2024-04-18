@@ -7,16 +7,22 @@ Python Test Framework for the Technical Task
 
 ## Pre-requisites
 
-1. Python v3.11 (or later) installed
+1. Python v3.10 (or later) installed
     - `pip` installed (by default)
 2. Virtual env created with command: `python -m venv .venv`
 
 ## Setup Test Framework Guide
 
-1. Activate your virtual environment
+1. Activate your virtual environment in the terminal
+
+- MacOS or Linux
+
 > source .venv/bin/activate
 
-2. In the terminal - install dependancies from requirements.txt
+- Windows:
+> .venv\Scripts\activate
+
+2. Install dependancies from requirements.txt
 > pip install -r requirements.txt
 
 3. You are now ready to execute the tests
