@@ -25,6 +25,7 @@ class BritHomePage:
     def get_search_results(self, search_text: str) -> Locator:
         """Search for a specifc text and return the top results found."""
         self.locators.navigation_search_button.click()
+        self.locators.search_box.clear()
         self.locators.search_box.type(search_text) # Using 'type' as 'fill' method doesn't trigger the results list
         self.locators.search_results.first.wait_for()
         return self.locators.search_results
