@@ -19,14 +19,14 @@ def brit_driver(page: Page) -> BritHomePage:
     return driver
 
 def test_search_count(brit_driver: BritHomePage):
-    """Scenario 1: Verify the search bar in the BRIT insurance website is returning the expected number of results."""
+    """Scenario 1a: Verify the search bar in the BRIT insurance website is returning the expected number of results."""
     for search, titles in SEARCH_CRITERIA.items():
         actual_results = brit_driver.get_search_results(search)
         assert len(titles) == 5, f"5 titles are expected to be returned for '{search}'"
         expect(actual_results, "Results is not the expected amount").to_have_count(len(titles))
 
 def test_search_content_links(brit_driver: BritHomePage):
-    """Scenario 1: Verify the search results content has the expected hyperlinks."""
+    """Scenario 1b: Verify the search results content has the expected titles and hyperlinks."""
     for search, criteria in SEARCH_CRITERIA.items():
         actual_results = brit_driver.get_search_results(search)
         for row in actual_results.all():

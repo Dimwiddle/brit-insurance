@@ -7,7 +7,8 @@ Python Test Framework for the Technical Task
 
 ## Pre-requisites
 
-1. Python v3.11 (or later) installed.
+1. Python v3.11 (or later) installed
+    - `pip` installed (by default)
 2. Virtual env created with command: `python -m venv .venv`
 
 ## Setup Test Framework Guide
