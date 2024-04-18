@@ -9,7 +9,9 @@ Python Test Framework for the Technical Task
 
 1. Python v3.10 (or later) installed
     - `pip` installed (by default)
-2. Virtual env created with command: `python -m venv .venv`
+2. Repository has been cloned locally.
+3. Terminal open in the root of the project.
+4. Virtual env created with command: `python -m venv .venv`
 
 ## Setup Test Framework Guide
 
