@@ -14,7 +14,7 @@ class Client:
         try:
             return requests.request(method ,url, data=data, headers=headers or self.default_headers)
         except RequestException as e:
-            raise RequestException(f"Issue found when sending PATCH request. \n Endpoint: {url} \n Data: {data} \n {e}")
+            raise RequestException(f"Issue found when sending request. \n Endpoint: {url} \n Data: {data} \n {e}")
     
     def patch_object(self, object_id: int, data: dict):
         """Send a PATCH request for a specfic object to update it's specific fields."""
