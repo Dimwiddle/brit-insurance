@@ -17,11 +17,11 @@ Python Test Framework for the Technical Task
 
 1. Activate your virtual environment in the terminal
 
-- MacOS or Linux
+MacOS or Linux
 
 > source .venv/bin/activate
 
-- Windows:
+Windows:
 > .venv\Scripts\activate
 
 2. Install dependancies from requirements.txt
@@ -51,7 +51,7 @@ To go deeper in to the testing of the search functionality, the following could 
 
 Currently the API tests in Scenario 2 (`test/test_scenario_2.py`) are functional tests, validating some valid / invalid request scenarios and some edge cases.
 
-In a more realistic business situation - the acceptance criteria / requirements of the endpoint would be clearer. Therefore we can create more robust scenarios for better coverage. The test data can also be controlled outside of the test case, if necessary.
+In a more realistic business situation, the acceptance criteria / requirements of the endpoint would be clearer. Therefore we can create more robust scenarios for better coverage. The test data can also be controlled outside of the test case, if necessary.
 
 Some other approaches to consider:
 
@@ -75,7 +75,7 @@ Here are some examples:
 
 3. Response time of each request, under different situations e.g. 
 - Concurrent request handling of the system
-- Varying the size of the payload to see how the API handles the underlying SQL query
+- Varying the size of the payload to see how the API handles the underlying query to the database.
 
 4. Test other methods for the API e.g. GET, DELETE, PUT. Verify the response status code is appropriate to the acceptance criteria.
 
