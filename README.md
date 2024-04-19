@@ -38,6 +38,15 @@ Currently reporting is created with the **pytest-html** library as it provides a
 
 In a more usual setting - I'd prefer to utilise a tool such as **Allure**. With this tool we can get more in-depth reporting for test methods as `allure.steps`, for example.
 
+### UI Testing Approach
+
+The current automated tests cover the search functionality and suggested results dropdown is showing 5 results.
+
+To go deeper in to the testing of the search functionality, the following could be tested:
+
+- Click each result in the dropdown and verify the search term 'IFRS 17' is contained within the page.
+- Press 'Enter' on the search box to verify the same titles and page links are posted on the list page.
+
 ### API Testing Approach
 
 Currently the API tests in Scenario 2 (`test/test_scenario_2.py`) are functional tests, validating some valid / invalid request scenarios and some edge cases.
