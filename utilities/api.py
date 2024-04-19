@@ -16,12 +16,12 @@ class Client:
         except RequestException as e:
             raise RequestException(f"Issue found when sending request. \n Endpoint: {url} \n Data: {data} \n {e}")
     
-    def patch_object(self, object_id: int, data: dict):
+    def patch_object(self, object_id: int, data: dict) -> Response:
         """Send a PATCH request for a specfic object to update it's specific fields."""
         url = f"{self.endpoint}/{object_id}"
         return self._send_request('PATCH', url, json.dumps(data))
     
-    def get_objects(self):
+    def get_objects(self) -> Response:
         """Send a GET request to retrieve existing objects from the server."""
         return self._send_request('GET', self.endpoint)
     
